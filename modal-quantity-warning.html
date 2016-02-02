@@ -1,0 +1,15 @@
+<div class="reveal-modal modal modal-main" id="modalQuantityWarning" role="dialog" reveal-modal reveal-data="zeroQuantityWarningModal"> 
+	<header>
+		<a class="close-reveal-modal close-modal" aria-hidden="true" ng-click="cancelItemDelete(zeroQuantityItem)"><i class="icon icon-close"></i></a>
+	</header>
+	<div class="core-dual-element medium">
+		<h3>Quantity Zero</h3>
+		<p class="modal-body" style="padding: 24px 24px 24px 24px">
+			@Cart.DeleteCartItemPrompt
+		</p>
+		<p class="text-right">
+			<a class="button " ng-click="deleteCartItem(zeroQuantityItem)" style="margin-right: 10px; cursor: pointer">Delete Button</a>
+			<a class="button" ng-click="cancelItemDelete(zeroQuantityItem)" style="margin-right: 10px; cursor: pointer">CancelButtonText</a>
+		</p>
+	</div>
+</div>
